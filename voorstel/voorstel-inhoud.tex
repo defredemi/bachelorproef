@@ -14,49 +14,55 @@
 
 \section{Inleiding}%
 \label{sec:inleiding}
-Deze bachelorproef richt zich op een specifiek probleem binnen DEME-Group, een internationaal bedrijf dat zich specialiseert in maritieme projecten, waaronder baggerwerkzaamheden, offshore-activiteiten en infrastructuurwerken. 
-DEME is actief in het ontwerpen, bouwen en onderhouden van complexe civiele en waterbouwkundige systemen. Ze werken met meer dan 100 schepen die wereldwijd worden ingezet voor verschillende maritieme projecten.
-Het probleem bevindt zich echter binnen de netwerkstructuur van een schip, die bestaat uit twee netwerken: 
-het IT-netwerk voor administratieve taken en het OT-netwerk voor de operationele systemen zoals de besturing van het schip. Deze twee netwerken zijn met elkaar verbonden via de nurse pc, die fungeert 
-als schakel en toegangspunt tussen de twee netwerken. De focus van deze bachelorproef ligt op het afbakenen van die schakel.
+Deze bachelorproef richt zich op een specifiek probleem binnen DEME-Group, een internationaal bedrijf dat zich specialiseert in maritieme projecten, waaronder 
+baggerwerkzaamheden, offshore-activiteiten en infrastructuurwerken. DEME-Group is actief in het ontwerpen, bouwen en onderhouden van complexe civiele en 
+waterbouwkundige systemen. DEME-Group heeft met meer dan 100 schepen die wereldwijd worden ingezet voor verschillende maritieme projecten. Het probleem 
+bevindt zich echter binnen de netwerkstructuur van een schip. De netwerkstructuur bestaat uit twee netwerken: het IT-netwerk voor administratieve taken 
+en het OT-netwerk voor de operationele systemen zoals onder meer de besturing van het schip. Deze twee netwerken zijn met elkaar verbonden via de nurse-PC, 
+die fungeert als schakel en toegangspunt tussen deze twee netwerken. De focus van deze bachelorproef ligt op het afbakenen en versterken van die schakel.
+
 
 \subsection{Probleemstelling en hoofdonderzoeksvraag}
-De ingenieurs van het ELEK-team (elektroteam) aan boord moeten snel en efficiënt problemen via de nurse-pc kunnen oplossen wanneer zich storingen voordoen in het OT- of IT-netwerk. Als het probleem niet snel wordt opgelost, kunnen belangrijke werkzaamheden, 
-zoals het vertrek van het schip of het baggeren, niet doorgaan. Dit brengt aanzienlijke kosten met zich mee.
-De nurse-pc wordt echter vaak misbruikt voor niet-geautoriseerde activiteiten (shadow IT). Dit leidt tot verlies van controle over de beveiliging en toegang tot de nurse-pc. 
-Hierdoor nemen de risico’s voor de twee netwerken aan boord toe. Het is daarom van cruciaal belang om de nurse-pc af te bakenen: het toegangsbeheer te optimaliseren en de beveiliging te versterken.
-
-Op basis van deze probleemstelling volgt de hoofdonderzoeksvraag:
-"Hoe kan het toegangsbeheer van de nurse pc op een schip worden versterkt door een vulnerability assessment uit te voeren en vervolgens de juiste beveiligingsmaatregelen te implementeren om de veiligheid van zowel het IT- als OT-netwerk aan boord te garanderen?"
+De ingenieurs van het ELEK-team aan boord moeten snel en efficiënt problemen via de nurse-PC oplossen wanneer zich storingen voordoen in het OT- of  IT-netwerk.  
+Als het probleem niet snel wordt opgelost, kunnen belangrijke werkzaamheden, zoals bijvoorbeeld het vertrek van het schip of het baggerwerkzaambheden, niet doorgaan. 
+Dit brengt aanzienlijke kosten met zich mee. De nurse-PC wordt echter vaak misbruikt voor niet-geautoriseerde activiteiten. Shadow IT leidt tot verlies van controle 
+over de beveiliging en toegang tot de nurse-PC.  Hierdoor nemen de risico’s voor beide netwerken aan boord toe. Het is daarom van cruciaal belang om de nurse-PC af 
+te bakenen: het toegangsbeheer te optimaliseren en de beveiliging te versterken. Op basis van deze probleemstelling volgt de hoofdonderzoeksvraag: 
+"Hoe kan het toegangsbeheer van de nurse-PC op een schip worden versterkt om de veiligheid van zowel het IT- als OT-netwerk aan boord te garanderen?” 
 
 \subsection{Deelvragen}
-- Hoe is de netwerkinfrastructuur aan boord van een schip ingericht in relatie tot de nurse-pc? \\     
-- Op welke manieren wordt toegang verleend tot de nurse-pc, zowel intern als extern? \\     
-- Wat zijn de specifieke kwetsbaarheden van de nurse-pc op basis van toegangsbeheer? \\      
-- Hoe wordt de toegang tot de nurse-pc gelogd?  \\   
+- Hoe is gehele netwerkinfrastructuur: het IT-  en OT-netwerk ingericht in relatie tot de nurse-PC aan boord van een schip? \\     
+- Op welke wijze wordt toegang verleend tot de nurse-PC zowel intern als extern? \\    
+- Wat zijn de specifieke kwetsbaarheden van de nurse-PC op basis van het toegangsbeheer? \\      
+- Hoe wordt de toegang tot de nurse-PC gemonitord?  \\   
 - Welke beveiligingsmaatregelen moeten worden geïmplementeerd op basis van de bevindingen uit de vulnerability assessment van het toegangsbeheer? \\
 
-
 \subsection{Doelgroep}
-De primaire doelgroep van dit onderzoek is het bedrijf DEME-Group, aangezien een goed functionerende nurse-PC en veilige netwerken essentieel zijn voor de continuïteit van kritieke operaties aan boord. Het oplossen van beveiligingsproblemen voorkomt financiële verliezen en verhoogt de efficiëntie van de schepen.
-Binnen het bedrijf worden drie specifieke groepen als doelgroepen beschouwd: het ELEK-team aan boord, de IT- en netwerkbeheerders, en de scheepsoperators en leidinggevenden.
-Het ELEK-team, bestaande uit verschillende ingenieurs met elk hun eigen specialisatie, is verantwoordelijk voor het onderhoud en de werking van de systemen aan boord. Bij technische problemen moeten zij snel en efficiënt kunnen troubleshooten met de nurse-pc. Een veilige nurse-pc is voor hen van cruciaal belang om zonder vertraging toegang te krijgen tot de juiste systemen, zodat storingen in de IT- en OT-netwerken snel verholpen kunnen worden en het schip operationeel blijft.
-De IT- en netwerkbeheerders moeten ervoor zorgen dat onbevoegden geen toegang krijgen en dat de systemen beschermd zijn tegen cyberdreigingen, wat bijdraagt aan de algehele netwerkveiligheid.
-Scheepsoperators, kapiteins en leidinggevenden zijn verantwoordelijk voor de operationele veiligheid en efficiëntie aan boord. Een veilige nurse-PC is voor hen van groot belang om storingen te voorkomen, zodat de schepen probleemloos kunnen opereren en de veiligheid van de bemanning gewaarborgd blijft.
+Een goed functionerende nurse-PC en veilige netwerken zijn essentieel voor de continuïteit van alle operaties aan boord. 
+Dit kan de primaire doelgroep DEME-Group, helpen om de netwerkveiligheid te verbeteren en financiële verliezen door storingen te voorkomen.
+Binnen het bedrijf worden drie specifieke groepen als doelgroepen beschouwd: het ELEK-team aan boord, de systeem- en netwerkbeheerders voor zowel het IT- als het OT-netwerk, de scheepsoperators en de leidinggevenden.
+Het ELEK-team, bestaande uit verschillende ingenieurs met elk hun eigen specialisatie, is verantwoordelijk voor het onderhoud en de werking van de operationele systemen aan boord. Bij technische problemen dienen zij snel en efficiënt te troubleshooten met de nurse-PC.  
+Een veilige en goed afgebakende nurse-PC is voor hen van cruciaal belang om zonder vertraging toegang te krijgen tot de juiste systemen, om storingen in de IT- en OT-netwerken snel te verhelpen zodat het schip operationeel blijft.
+De systeem -en netwerkbeheerders moeten ervoor zorgen dat onbevoegden geen toegang krijgen en dat de systemen beschermd zijn tegen cyberbedreigingen. Dit zal bijdragen aan de algemene netwerkveiligheid.
+Scheepsoperators en hun leidinggevenden (o.a. de kapitein, eerste stuurman, enz.) zijn verantwoordelijk voor de operationele veiligheid en efficiëntie aan boord. Een veilige nurse-PC is voor hen van groot belang om storingen te voorkomen, 
+zodat de schepen probleemloos kunnen opereren en de veiligheid van de bemanning gewaarborgd blijft.
 
 
 \subsection{Onderzoeksdoelstelling}
 De onderzoeksdoelstelling is het opstellen van een gedetailleerd rapport waarin de geïdentificeerde kwetsbaarheden en aanbevelingen, als resultaat van de vulnerability assesment, worden genoteerd.
-Op basis van dit rapport wordt er een proof-of-concept gedemonstreert met alle beveiligingsimplementaties.
+Op basis van dit rapport wordt er een proof-of-concept gedemonstreerd met alle beveiligingsimplementaties.
 Daarnaast wordt er ook documentatie bijgehouden van alle stappen van de technische implementatie.
-Het doel van de documentatie is dat de basis van de proof-of-concept in de toekomst kan worden gerepliceerd op de gehele vloot.
+Het doel van de documentatie is dat de basis van de proof-of-concept in de toekomst kan worden gerepliceerd op de gehele vloot van schepen.
+
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Literatuurstudie}%
 \label{sec:literatuurstudie}
 \subsection{Nurse-pc}
-\subsection{Shadow-IT}
+\subsection{IT-netwerk}
+\subsection{OT-netwerk}
+\subsection{Shadow IT}
 \subsection{Toegangsbeheer}
 \subsection{Automatisatie}
 \subsection{Vulnerability assesment}
@@ -68,38 +74,28 @@ Het doel van de documentatie is dat de basis van de proof-of-concept in de toeko
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
-In dit onderzoek worden allereerst interviews afgenomen met interne IT-specialisten om de nodige kennis te verkrijgen over de netwerkstructuur en de nurse-pc. 
-Hierdoor kan er een goed inzicht gecreëerd worden in de huidige situatie. De vragen en antwoorden worden opgenomen in een document.
-
-Vervolgens wordt er een vulnerability assessment uitgevoerd om de toegang tot de nurse-pc te evalueren en mogelijke relevante kwetsbaarheden in het systeem 
-of netwerkstructuur te identificeren. Dit resulteert in een rapport met de bevindingen van de vulnerability assesment.
-
-Op basis van de resultaten van de assessment worden de benodigde beveiligingsmaatregelen geïmplementeerd en getest doormiddel van een proof-of-concept. 
-Dit gebeurt in een labo dat de netwerkstructuur van een schip volledig simuleert. De systemen beschikken over een Windows operating system dus zal er, voor configuratie en automatisering van toegangsbeheer en beveiligingsimplementatie, gewerkt worden met Powershell. 
-Als hulpmiddel zal er ook op een fysieke laptop met vagrant een virtuele machine aangemaakt worden die een Windows 10 desktop omgeving nabootst om te expirimenteren en zaken uit te testen.
-
-Tijdens de implementatie worden alle stappen, automatiseringsscripts, commando's en andere relevante details gedocumenteerd, 
-zodat de proof-of-concept op een reproduceerbare manier kan worden uitgevoerd.
+In dit onderzoek worden allereerst interviews afgenomen met interne IT- en OT- specialisten om de nodige kennis te verkrijgen over de netwerkstructuur en de nurse-PC.
+Hierdoor, kan er een goed inzicht gecreëerd worden in de huidige situatie. De vragen en antwoorden worden opgenomen in een document.
+Vervolgens, wordt er een vulnerability assessment uitgevoerd om de toegang tot de nurse-PC te evalueren en mogelijke relevante kwetsbaarheden in het systeem of netwerkstructuur te identificeren. 
+Dit resulteert in een rapport met de bevindingen van de vulnerability assessment.
+Op basis van de resultaten van de assessment, worden de benodigde beveiligingsmaatregelen geïmplementeerd en getest door middel van een proof-of-concept. Dit gebeurt in een labo bij DEME-Group dat de netwerkstructuur van een schip volledig simuleert.  
+De systemen beschikken over een Windows Operating System. Voor configuratie en automatisering van het toegangsbeheer en beveiligingsimplementatie, wordt er gewerkt met Powershell. 
+Als extra hulpmiddel, zal er op een fysieke laptop, een virtuele machine aangemaakt worden met Vagrant die een Windows 10 desktop omgeving nabootst.
+Tijdens de implementatie worden alle stappen, automatiseringsscripts, commando's en andere relevante details gedocumenteerd. Het doel is om in de toekomst, de proof-of-concept op een zowel reproduceerbare, repliceerbare en herbruikbare manier uit te voeren.
 
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
-Het onderzoek zal naar verwachting leiden tot een verbetering van het toegangsbeheer en de beveiliging van de nurse-pc aan boord van schepen,
-door kwetsbaarheden te identificeren en passende beveiligingsmaatregelen te implementeren. Dit versterkt de veiligheid
-van de verbinding tussen het IT- en OT-netwerk en minimaliseert het risico op onbevoegde toegang of cyberdreigingen. 
-Bovendien zorgt de gedocumenteerde proof-of-concept ervoor dat de geïmplementeerde beveiligingsmaatregelen in de toekomst eenvoudig kunnen 
-worden gerepliceerd op andere schepen binnen de vloot, waardoor een consistente beveiliging wordt gegarandeerd.
-
-De meerwaarde van deze bachelorproef ligt in de praktische toepasbaarheid van de bevindingen voor DEME-Group.
-De verbeterde beveiliging draagt bij aan de operationele continuïteit en efficiëntie 
-van schepen, en biedt waardevolle inzichten voor het integreren van cybersecurity in industriële netwerken. De implementatie 
-van deze maatregelen draagt ook bij aan een duurzamer en effectiever beheer van de netwerken, wat de algehele operationele kosten 
-verlaagt.
+Het onderzoek zal naar verwachting leiden tot een versterking van het toegangsbeheer en de beveiliging van de nurse-PC aan boord van een schip.   
+Bovendien, zorgt de gedocumenteerde proof-of-concept ervoor dat de geïmplementeerde beveiligingsmaatregelen in de toekomst eenvoudig gerepliceerd en herbruikt kunnen worden op andere schepen binnen de vloot.
+De meerwaarde voor DEME-Group van deze bachelorproef, ligt in de praktische en technische toepasbaarheid en implementatie van de proof-of-concept. 
+De verbeterde beveiliging draagt bij aan de operationele continuïteit en efficiëntie van schepen en biedt waardevolle inzichten voor het integreren van cybersecurity in industriële netwerken. 
+De implementatie van deze maatregelen draagt ook bij aan een duurzamer en effectiever beheer van de netwerken, wat op zich de operationele kosten verlaagt.
 
 
+\section{Referentielijst}%
 
