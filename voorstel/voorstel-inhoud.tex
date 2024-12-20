@@ -60,21 +60,20 @@ Het doel van de documentatie is dat de basis van de proof-of-concept in de toeko
 \section{Literatuurstudie}%
 \label{sec:literatuurstudie}
 \subsection{Introductie}
-De dreiging van cyberaanvallen op schepen neemt in snel tempo toe, waarbij de kwetsbaarheid van operationele technologie steeds duidelijker wordt. Volgens 
-een interview van \textcite{Hecker2021}, met ethisch hacker Weston Hecker, zijn cyberaanvallen op de operationele technologie van schepen de afgelopen jaren 
-met maar liefst 900\% gestegen. Hecker legt uit hoe kwetsbaar veel schepen zijn, zelfs ondanks de vooruitgang in informatiebeveiliging. Hackers kunnen vaak eenvoudig 
-toegang krijgen tot schepen via kwetsbaarheden zoals onbeveiligde draadloze netwerken, printers of zelfs door het lezen van een gebruikershandleiding. Hecker gaf ook aan dat apparaten zoals draadloze toetsenborden en muizen 
-kunnen worden misbruikt om systemen, zoals de voortstuwing van een schip, te manipuleren, wat de gevaren van een onvoldoende beveiligde netwerkinfrastructuur onderstreept. 
-Onveilige verbindingen kunnen ernstige gevolgen hebben, zoals het overnemen van systemen die essentieel zijn voor de werking van het schip.
-Dit benadrukt de noodzaak om werkstations, zoals de nurse-PC, goed af te bakenen aangezien deze computer gebruikt wordt om kritieke operationele taken uit te voeren.
+In de afgelopen jaren is de kwetsbaarheid van schepen voor cyberaanvallen in een verontrustend tempo toegenomen. Weston \textcite{Hecker2021}, ethical hacker bij het security bedrijf 
+Mission Secure, benadrukt in een interview met Declan Bush de vaak over het hoofd geziene zwaktes in de maritieme beveiliging. Hij
+legt uit hoe kwetsbaar veel schepen zijn, ondanks de vooruitgang in informatiebeveiliging. \textcite{Hecker2021} bevestigt hoe schijnbaar onschuldige apparaten, zoals draadloze toetsenborden, printers en 
+zelfs gebruikershandleidingen, door aanvallers kunnen worden misbruikt. Dit illustreert de gevaren van shadow IT, waarbij bijvoorbeeld 
+ongecontroleerde en niet-geautoriseerde apparaten aan de nurse-PC kunnen worden gekoppeld, wat een groot risico vormt voor de operationele technologie aan boord. 
+Deze technologie is vaak het belangrijkste doelwit voor aanvallers, omdat deze systemen verantwoordelijk zijn voor de werking van het schip.
 
 \subsection{De rol van de nurse-PC}
 De Nurse-PC speelt een cruciale rol in de brugfunctie tussen het IT- en OT-netwerk. Deze specifieke computer bevindt 
 zich tussen beide netwerken en fungeert als tussenpersoon die belangrijke informatie en documentatie kan ophalen over verschillende machines 
-die zich in het OT-netwerk bevinden. Het systeem stelt de technici in staat om op afstand toegang te krijgen tot gedetailleerde gegevens over de 
+die zich in het OT-netwerk bevinden. Het systeem stelt de technici in staat toegang te krijgen tot gedetailleerde gegevens over de 
 machines, zodat ze snel kunnen troubleshooten en technische problemen kunnen analyseren en oplossen. De Nurse-PC zorgt ervoor dat alle benodigde documentatie, 
 zoals technische specificaties en foutmeldingen, snel beschikbaar is voor het onderhoudsteam. Zo kunnen zij de juiste acties ondernemen om storingen 
-te verhelpen en de systemen optimaal te laten functioneren. Door deze interface kunnen technische problemen sneller worden gedetecteerd en opgelost (K. Ternoey, persoonlijke communicatie, 4 november 2024).
+te verhelpen en de systemen optimaal te laten functioneren (K. Ternoey, persoonlijke communicatie, 4 november 2024).
 
 \subsection{Wat is Shadow IT}
 Naast cyberaanvallen kunnen er ook schadelijke situaties ontstaan door Shadow IT binnen de organisatie. Hoewel dit vaak onbedoeld gebeurt, vormt dit probleem een 
@@ -83,14 +82,14 @@ Dit kan variëren van persoonlijke apparaten tot cloudtechnologieën, zoals het 
 overeenstemming met de interne IT-processen en beveiligingsmaatregelen, waardoor ze een risico vormen voor de veiligheid van gegevens en systemen. Shadow IT kan leiden tot datadiefstal, 
 verspreiding van malware of andere beveiligingsincidenten, omdat deze apparaten of diensten vaak niet voldoen aan de vereiste beveiligingsnormen. Hoewel het meestal niet opzettelijk is, 
 ontstaat Shadow IT vaak doordat medewerkers officiële tools of processen als onvoldoende beschouwen om hun werk effectief te kunnen uitvoeren. Het is van essentieel belang dat organisaties 
-deze praktijk herkennen en beheren om de bijbehorende risico’s te beperken \autocite{NCSC2024}.
+deze praktijk herkennen en beheren om de bijbehorende risico’s te beperken \autocite{NCSC2023}.
 
 \subsection{Shadow IT in de context van de Nurse-PC}
 In de context van de nurse-PC aan boord van een schip kan Shadow IT een bijzonder risico vormen. De nurse-PC speelt een cruciale rol door te fungeren als de brug 
 tussen het IT- en OT-netwerk. Het biedt technici toegang tot gedetailleerde gegevens over machines in het OT-netwerk, waardoor ze op afstand problemen kunnen 
 identificeren en oplossen. Wanneer medewerkers echter persoonlijke apparaten of software gebruiken om toegang te krijgen tot deze systemen of gegevens, buiten de 
 goedkeuring en controle van de IT-afdeling om, kan dit ernstige beveiligingsrisico's met zich meebrengen. Bijvoorbeeld, als de nurse-PC wordt gekoppeld aan onveilige 
-apparaten of niet-goedgekeurde software, kunnen gevoelige gegevens zoals technische specificaties of foutmeldingen kwetsbaar worden voor datadiefstal of aanvallen. 
+apparaten of niet-goedgekeurde software, kunnen gevoelige gegevens zoals technische specificaties of foutmeldingen kwetsbaar worden voor datadiefstal of aanvallen, zoals eerder besproken in het interview met \textcite{Hecker2021}.
 Dit kan ook de integriteit van de machinebesturingssystemen in gevaar brengen. Het is dus van essentieel belang dat de organisatie ervoor zorgt dat alleen goedgekeurde 
 technologieën en beveiligde apparaten worden gebruikt in verband met de nurse-PC om de risico's van Shadow IT te minimaliseren en de veiligheid van zowel de gegevens 
 als de systemen aan boord te waarborgen (K. Ternoey, persoonlijke communicatie, 4 november 2024).
@@ -100,14 +99,14 @@ IT (informatietechnologie) en OT (operationele technologie) vervullen verschille
 uitwisseling van gegevens, waarbij computers, servers en andere apparaten zoals smartphones en tablets worden gebruikt. OT daarentegen houdt zich bezig met het 
 monitoren en besturen van fysieke processen en apparatuur, zoals industriële machines en besturingssystemen. Hoewel deze twee netwerken lange tijd gescheiden waren, 
 wordt de scheidslijn steeds vager door de opkomst van IT/OT-convergentie, waarbij beide systemen steeds meer met elkaar worden geïntegreerd. Dit biedt nieuwe kansen, 
-maar brengt ook risico’s met zich mee, vooral op het gebied van cybersecurity \autocite{Wangsness2023ITOT}.
+maar brengt ook risico’s met zich mee, vooral op het gebied van cybersecurity \autocite{onlogic2023}.
 
 \subsection{IT/OT-convergentie}
 De convergentie van Informatie Technologie (IT) en Operationele Technologie (OT) is een proces waarbij de twee voorheen gescheiden werelden worden geïntegreerd, mede aangedreven door digitale 
 transformatie en technologische innovaties zoals het Internet of Things (IoT) en big data-analyse. Deze integratie maakt een naadloze gegevensstroom mogelijk tussen de digitale en fysieke werelden, 
 waardoor operationele systemen efficiënter kunnen worden aangestuurd en geoptimaliseerd. Er zijn drie belangrijke vormen van IT/OT-convergentie: fysieke convergentie (directe verbinding van OT-apparaten met IT-netwerken), 
 softwareconvergentie (waarbij OT-gegevens digitaal worden geanalyseerd door IT-systemen), en organisatorische convergentie (waarbij de werkstromen van IT en OT samensmelten om de samenwerking te verbeteren). Deze integratie 
-leidt tot betere besluitvorming, verhoogde efficiëntie en innovatie, wat cruciaal is voor de vooruitgang van de Industrie 4.0 en het Industrial Internet of Things (IIoT) \autocite{Convergentie}.
+leidt tot betere besluitvorming, verhoogde efficiëntie en innovatie, wat cruciaal is voor de vooruitgang van de Industrie 4.0 en het Industrial Internet of Things (IIoT) \autocite{maleh2021ot,paloaltonetworks2023}.
 
 \subsection{OT-security}
 OT-security richt zich op de bescherming van operationele technologieën die worden gebruikt in industriële netwerken. Naarmate de connectiviteit van deze systemen 
