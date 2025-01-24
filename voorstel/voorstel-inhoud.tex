@@ -28,14 +28,12 @@ over de beveiliging en toegang tot de nurse-PC. Hierdoor nemen de risico’s voo
 te bakenen: het toegangsbeheer te optimaliseren en de beveiliging te versterken. Op basis van deze probleemstelling volgt de hoofdonderzoeksvraag: 
 "Hoe kan het toegangsbeheer van de nurse-PC op een schip worden versterkt om de veiligheid van zowel het IT- als OT-netwerk aan boord te garanderen?” 
 
-\subsection{Deelvragen}
-- Hoe is het IT- en OT-netwerk ingericht in relatie tot de nurse-PC aan boord van een schip? \\     
-- Op welke wijze wordt toegang verleend tot de nurse-PC zowel intern als extern? \\    
+\subsection{Deelvragen}   
 - Wat zijn de specifieke kwetsbaarheden van de nurse-PC op basis van het toegangsbeheer? \\       
 - Welke beveiligingsmaatregelen moeten worden geïmplementeerd op basis van de bevindingen uit de vulnerability assessment van het toegangsbeheer? \\
 - Welke methoden kunnen worden gebruikt om Shadow IT beter te detecteren en in kaart te brengen? \\
-- Hoe kan Shadow IT bijdragen aan de verspreiding van malware of andere cyberdreigingen binnen het netwerk?\\
-- Op welke manier kunnen ongeautoriseerde gebruikers toegang krijgen tot de nurse-PC?\\
+- Op welke wijze wordt toegang verleend tot de nurse-PC zowel intern als extern? \\
+- Hoe is het IT- en OT-netwerk ingericht in relatie tot de nurse-PC aan boord van een schip? \\
 
 \subsection{Doelgroep}
 Een goed functionerende nurse-PC en veilige netwerken zijn essentieel voor de continuïteit van alle operaties aan boord. 
@@ -65,8 +63,9 @@ legt uit hoe kwetsbaar veel schepen zijn ondanks de vooruitgang in de informatie
 zelfs gebruikershandleidingen door aanvallers worden misbruikt. Dit illustreert de gevaren van Shadow IT.
 Ongecontroleerde en niet-geautoriseerde apparaten koppelen aan de nurse-PC vormt opzich een groot risico voor de operationele technologie aan boord. 
 Deze operationele technologie is vaak het belangrijkste doelwit voor aanvallers omdat deze systemen verantwoordelijk zijn voor de werking van het schip.
+De literatuurstudie gaat dieper in op de volgende aspecten: de rol van de nurse-PC, Shadow IT, IT/OT-netwerken en security.
 
-\subsection{De rol van de nurse-PC}
+\subsection{De rol van de nurse-PC in het IT- en OT-netwerk} 
 De nurse-PC speelt de belangrijkste rol in de brugfunctie tussen het IT- en OT-netwerk. Deze specifieke computer bevindt 
 zich tussen beide netwerken en fungeert als schakel en als toegangspunt. De nurse-PC haalt informatie en documentatie op over verschillende systemen heen.
 Het ELEK-team kan dan toegang krijgen tot gedetailleerde gegevens over de 
@@ -74,32 +73,29 @@ machines. Zo kan het team snel troubleshooten en technische problemen oplossen. 
 snel beschikbaar is voor het ELEK-team. Het ELEK-team kan zo storingen
 verhelpen en de systemen optimaal laten functioneren (K. Ternoey, persoonlijke communicatie, 4 november 2024).
 
-\subsection{Shadow IT}
+\subsection{Shadow IT en de risico's voor de nurse-PC}
+De kwetsbaarheid van de nurse-PC wordt echter verder vergroot door de oncontroleerbare invloed van Shadow IT.
 Shadow IT verwijst naar IT-middelen die binnen een organisatie worden gebruikt zonder goedkeuring of beheer door de IT-afdeling.
 Het gebruik van persoonlijke apparaten en cloudtechnologieën stemt vaak niet overeen met de interne IT-processen en beveiligingsmaatregelen waardoor ze een 
 risico vormen voor de veiligheid van gegevens en systemen. Shadow IT kan leiden tot diefstal van data, 
 verspreiding van malware of andere beveiligingsincidenten omdat deze apparaten of diensten vaak niet voldoen aan de vereiste beveiligingsnormen. 
 Het is van essentieel belang dat organisaties deze praktijken herkennen en beheren om de bijbehorende risico’s te beperken \autocite{NCSC2023}.
-
-\subsection{Shadow IT in de context van de nurse-PC}
 Shadow IT vormt een ernstig risico.
 Wanneer medewerkers persoonlijke apparaten of 
 \\niet-goedgekeurde software gebruiken om toegang te krijgen tot systemen of gegevens, kunnen er beveiligingsproblemen ontstaan. 
 In het geval dat de nurse-PC wordt gekoppeld aan onveilige hardware of software, worden gevoelige gegevens kwetsbaar voor 
 datadiefstal of aanvallen zoals eerder besproken in het interview met \textcite{Hecker2021}. 
-Bovendien, kunnen werknemers die betrokken zijn bij Shadow IT, malware binnenhalen via niet-geautoriseerde apparaten of software. 
+Bovendien, kunnen werknemers die betrokken zijn bij Shadow IT, malware binnenhalen via \\ niet-geautoriseerde apparaten of software. 
 De malware kan zich dan via de nurse-PC verspreiden naar zowel het IT- als het OT-netwerk. 
 Dit vergroot de kans op systeeminfecties. De integriteit van de machinebesturingssystemen loopt hierdoor ernstig in
 gevaar (K. Ternoey, persoonlijke communicatie, 4 november 2024).
 
-\subsection{Het verschil tussen een IT-netwerk en een OT-netwerk}
+\subsection{IT/OT-convergentie}
 Informatie Technologie (IT) en Operationele \\Technologie (OT) vervullen verschillende functies binnen een organisatie. IT richt zich op de verwerking, opslag en 
 uitwisseling van gegevens. De computers, servers en andere apparaten zoals \\smartphones en tablets maken hier gebruik van. Daarentegen, houdt OT zich bezig met het 
 monitoren en besturen van fysieke processen en apparatuur zoals industriële machines. Hoewel deze twee netwerken lange tijd gescheiden waren, 
 \\wordt de scheidingslijn steeds vager. Door de opkomst van IT/OT-convergentie worden beide systemen steeds meer met elkaar geïntegreerd. Dit biedt nieuwe kansen
 maar brengt ook risico’s met zich mee, vooral op het gebied van cybersecurity \autocite{onlogic2023}.
-
-\subsection{IT/OT-convergentie}
 De convergentie van Informatie Technologie (IT) en Operationele Technologie (OT) is een proces waarbij beide werelden worden geïntegreerd. 
 Dit proces wordt mede aangedreven door digitale transformatie en technologische innovaties zoals Internet of Things (IoT) en Big data-analyse. Deze integratie maakt een vlotte gegevensstroom mogelijk tussen de digitale en fysieke werelden
 waardoor operationele systemen efficiënter worden aangestuurd en geoptimaliseerd. Er zijn drie belangrijke vormen van IT/OT-convergentie: fysieke convergentie, 
@@ -108,6 +104,7 @@ de digitale analyse van OT-gegevens door IT-systemen. De organisatorische conver
 Deze integratie leidt tot betere besluitvorming, verhoogde efficiëntie en innovatie wat belangrijk is voor de vooruitgang van de Industrie 4.0. \autocite{maleh2021ot,paloaltonetworks2023}.
 
 \subsection{OT-security}
+Hoewel IT/OT-convergentie nieuwe mogelijkheden biedt, brengt het ook nieuwe beveiligingsuitdagingen met zich mee zoals de bescherming van operationele systemen.
 OT-security richt zich op de bescherming van operationele technologieën die worden gebruikt in industriële netwerken. Naarmate de connectiviteit van deze systemen 
 met externe netwerken toeneemt, nemen de risico’s van cyberaanvallen toe. OT-security omvat een breed scala aan maatregelen en technologieën die ontworpen zijn om 
 de betrouwbaarheid en veiligheid van industriële systemen zoals SCADA (Supervisory Control And Data Acquisition) en Industrial Control Systems (ICS) te waarborgen. Deze systemen worden vaak ingezet in vitale 
