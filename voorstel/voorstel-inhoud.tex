@@ -14,42 +14,42 @@
 
 \section{Inleiding}%
 \label{sec:inleiding}
-Deze bachelorproef richt zich op een specifiek probleem binnen DEME-Group, een internationaal bedrijf dat zich specialiseert in maritieme projecten, waaronder 
+Deze bachelorproef richt zich op een specifiek probleem binnen DEME-Group, een internationaal bedrijf dat zich specialiseert in maritieme projecten waaronder 
 baggerwerkzaamheden, \\offshore-activiteiten en infrastructuurwerken. \\DEME-Group heeft meer dan 100 schepen die wereldwijd worden ingezet voor verschillende maritieme projecten. Het probleem 
 bevindt zich echter binnen de netwerkstructuur op hun schepen. Deze bachelorproef zoomt in op de netwerkstructuur en nurse-PC op één bepaald schip. De netwerkstructuur bestaat uit twee netwerken: het IT-netwerk voor administratieve taken 
 en het OT-netwerk voor de operationele systemen. Deze twee netwerken zijn met elkaar verbonden via de nurse-PC, 
 die fungeert als schakel en toegangspunt tussen deze twee netwerken. De focus van deze bachelorproef ligt op het afbakenen en versterken van die schakel.
 
 \subsection{Probleemstelling en hoofdonderzoeksvraag}
-De ingenieurs van het ELEK-team aan boord moeten snel en efficiënt problemen via de nurse-PC oplossen wanneer zich storingen voordoen in het OT- of IT-netwerk.  
-Als het probleem niet snel wordt opgelost, kunnen belangrijke werkzaamheden, zoals bijvoorbeeld het vertrek van het schip of het baggerwerkzaambheden, niet doorgaan. 
+De operatoren van het ELEK-team aan boord moeten snel en efficiënt problemen via de nurse-PC oplossen wanneer zich storingen voordoen in het OT- of IT-netwerk.  
+Als het probleem niet snel wordt opgelost, kunnen belangrijke werkzaamheden zoals bijvoorbeeld het vertrek van het schip of baggerwerkzaamheden niet doorgaan. 
 Dit brengt aanzienlijke kosten met zich mee. De nurse-PC wordt echter vaak misbruikt voor niet-geautoriseerde activiteiten. Dit heet Shadow IT en leidt tot verlies van controle 
 over de beveiliging en toegang tot de nurse-PC. Hierdoor nemen de risico’s voor beide netwerken aan boord toe. Het is daarom van cruciaal belang om de nurse-PC af 
-te bakenen: het toegangsbeheer te optimaliseren en de beveiliging te versterken. Op basis van deze probleemstelling volgt de hoofdonderzoeksvraag: 
+te bakenen, het toegangsbeheer te optimaliseren en de beveiliging te versterken. Op basis van deze probleemstelling volgt de hoofdonderzoeksvraag: 
 "Hoe kan het toegangsbeheer van de nurse-PC op een schip worden versterkt om de veiligheid van zowel het IT- als OT-netwerk aan boord te garanderen?” 
 
 \subsection{Deelvragen}   
+- Welke methoden kunnen worden gebruikt om Shadow IT beter te detecteren en in kaart te brengen? \\
 - Wat zijn de specifieke kwetsbaarheden van de nurse-PC op basis van het toegangsbeheer? \\       
 - Welke beveiligingsmaatregelen moeten worden geïmplementeerd op basis van de bevindingen uit de vulnerability assessment van het toegangsbeheer? \\
-- Welke methoden kunnen worden gebruikt om Shadow IT beter te detecteren en in kaart te brengen? \\
 - Hoe kan Shadow IT bijdragen aan de verspreiding van malware of andere cyberdreigingen binnen het netwerk?\\
 - Op welke wijze wordt toegang verleend tot de nurse-PC zowel intern als extern? \\
 
 \subsection{Doelgroep}
 Een goed functionerende nurse-PC en veilige netwerken zijn essentieel voor de continuïteit van alle operaties aan boord. 
-Dit kan de primaire doelgroep DEME-Group, helpen om de netwerkbeveiliging te verbeteren en financiële verliezen door storingen te voorkomen.
-Binnen het bedrijf worden drie specifieke groepen als doelgroepen beschouwd: het ELEK-team aan boord, de systeem- en netwerkbeheerders voor zowel het IT- als het OT-netwerk, de scheepsoperators en de leidinggevenden.
-Het ELEK-team, bestaande uit verschillende ingenieurs met elk hun eigen specialisatie, is verantwoordelijk voor het onderhoud en de werking van de operationele systemen aan boord. Bij technische problemen dienen zij snel en efficiënt te troubleshooten met de nurse-PC.  
-Een veilige en goed afgebakende nurse-PC is voor hen van cruciaal belang om zonder vertraging toegang te krijgen tot de juiste systemen, om storingen in de IT- en OT-netwerken snel te verhelpen zodat het schip operationeel blijft.
-De systeem -en netwerkbeheerders moeten ervoor zorgen dat onbevoegden geen toegang krijgen en dat de systemen beschermd zijn tegen cyberbedreigingen. Dit zal bijdragen aan de algemene netwerkbeveiliging.
-Scheepsoperators en hun leidinggevenden (o.a. de kapitein, eerste stuurman, enz.) zijn verantwoordelijk voor de operationele veiligheid en efficiëntie aan boord. Een veilige nurse-PC is voor hen van groot belang om storingen te voorkomen, 
+Dit kan de primaire doelgroep genaamd DEME-Group, helpen om de netwerkbeveiliging te verbeteren en financiële verliezen door storingen te voorkomen.
+Binnen het bedrijf worden drie specifieke groepen als doelgroepen beschouwd: het ELEK-team aan boord, de systeem- en netwerkbeheerders voor zowel het IT- als het OT-netwerk, de operatoren en de leidinggevenden.
+Het ELEK-team, bestaande uit verschillende operatoren met elk hun eigen specialisatie, is verantwoordelijk voor het onderhoud en de werking van de operationele systemen aan boord. Bij technische problemen dienen zij snel en efficiënt te troubleshooten met de nurse-PC.  
+Een veilige en goed afgebakende nurse-PC is voor hun van cruciaal belang om zonder vertraging toegang te krijgen tot de juiste systemen en om storingen in het IT- en OT-netwerk snel te verhelpen zodat het schip operationeel blijft.
+De systeem- en netwerkbeheerders dienen ervoor zorgen dat onbevoegden geen toegang krijgen en dat de systemen beschermd zijn tegen cyberbedreigingen. Dit zal bijdragen aan de algemene netwerkbeveiliging.
+Scheepsoperatoren en hun leidinggevenden (o.a. de kapitein, eerste stuurman, enz.) zijn verantwoordelijk voor de operationele veiligheid en efficiëntie aan boord. Een veilige nurse-PC is van groot belang om storingen te voorkomen
 zodat de schepen probleemloos kunnen opereren en de veiligheid van de bemanning gewaarborgd blijft.
 
 \subsection{Onderzoeksdoelstelling}
 De onderzoeksdoelstelling is het opstellen van een gedetailleerd rapport waarin de geïdentificeerde kwetsbaarheden en aanbevelingen, als resultaat van de vulnerability assesment, worden genoteerd.
 Op basis van dit rapport wordt er een proof-of-concept gedemonstreerd met alle beveiligingsimplementaties.
-Daarnaast wordt er ook documentatie bijgehouden van alle stappen van de technische implementatie.
-Het doel van de documentatie is dat de basis van de proof-of-concept in de toekomst kan worden gerepliceerd en herbruikt op de gehele vloot van DEME-Group.
+Daarnaast, wordt er ook documentatie bijgehouden van alle stappen van de technische implementatie.
+Het doel van de documentatie is dat de basis van de proof-of-concept in de toekomst kan gerepliceerd en herbruikt worden op de gehele vloot van DEME-Group.
 
 
 %---------- Stand van zaken ---------------------------------------------------
@@ -58,16 +58,16 @@ Het doel van de documentatie is dat de basis van de proof-of-concept in de toeko
 \label{sec:literatuurstudie}
 \subsection{Introductie}
 In de afgelopen jaren, is de kwetsbaarheid van schepen door cyberaanvallen in een verontrustend tempo toegenomen. Weston \textcite{Hecker2021}, ethical hacker bij het security bedrijf 
-Mission Secure, benadrukt in een interview met Declan Bush de zwaktes die vaak over het hoofd gezien worden in de maritieme beveiliging. Hij
-legt uit hoe kwetsbaar veel schepen zijn ondanks de vooruitgang in de informatiebeveiliging. \textcite{Hecker2021} bevestigt hoe schijnbaar onschuldige apparaten zoals draadloze toetsenborden, printers en 
+Mission Secure benadrukt, in een interview met Declan Bush, de zwaktes die vaak over het hoofd gezien worden in de maritieme beveiliging. Hij
+legt uit hoe kwetsbaar veel schepen zijn ondanks de vooruitgang in de informatiebeveiliging. \textcite{Hecker2021} bevestigt hoe onschuldige apparaten zoals draadloze toetsenborden, printers en 
 zelfs gebruikershandleidingen door aanvallers worden misbruikt. Dit illustreert de gevaren van Shadow IT waarbij ongecontroleerde en niet-geautoriseerde apparaten toegang kunnen krijgen tot kritieke systemen aan boord. 
 Het koppelen van dergelijke apparaten aan de nurse-PC vormt een groot risico. De nurse-PC fungeert als een brug tussen het IT- en OT-netwerk en vormt daarmee een belangrijk toegangspunt. 
 Aangezien de operationele technologie aan boord vaak het primaire doelwit is, is het belangrijk om de beveiligingsrisico's van Shadow IT in de context van de nurse-PC grondig te onderzoeken.
-Deze literatuurstudie gaat dieper in op IT-en OT netwerken, IT/OT-convergentie, de rol van de nurse-PC, OT-security, Shadow IT en de vulnerability assessment.
+Deze literatuurstudie gaat dieper in op IT- en OT netwerken, IT/OT-convergentie, de rol van de nurse-PC, OT-security en Shadow IT.
 
 \subsection{IT- en OT netwerken}
 Informatie Technologie (IT) en Operationele \\Technologie (OT) vervullen verschillende functies binnen een organisatie. IT richt zich op de verwerking, opslag en 
-uitwisseling van gegevens. De computers, servers en andere apparaten zoals \\smartphones en tablets maken hier gebruik van. Daarentegen, houdt OT zich bezig met het 
+uitwisseling van gegevens. De computers, servers en andere apparaten zoals \\smartphones en tablets maken hiervan gebruik. Daarentegen, houdt OT zich bezig met het 
 monitoren en besturen van fysieke processen en apparatuur zoals industriële machines. Hoewel deze twee netwerken lange tijd gescheiden waren, 
 \\wordt de scheidingslijn steeds vager. Door de opkomst van IT/OT-convergentie worden beide systemen steeds meer met elkaar geïntegreerd. Dit biedt nieuwe kansen
 maar brengt ook risico’s met zich mee, vooral op het gebied van cybersecurity \autocite{onlogic2023}.
@@ -106,7 +106,7 @@ Het gebruik van persoonlijke apparaten en cloudtechnologieën stemt vaak niet ov
 risico vormen voor de veiligheid van gegevens en systemen. Shadow IT kan leiden tot diefstal van data, 
 verspreiding van malware of andere beveiligingsincidenten omdat deze apparaten of diensten vaak niet voldoen aan de vereiste beveiligingsnormen. 
 Het is essentieel dat organisaties deze praktijken herkennen en beheren om deze risico’s te beperken \autocite{NCSC2023}.
-Wanneer medewerkers persoonlijke apparaten of \\niet-goedgekeurde software gebruiken om toegang te krijgen tot systemen of gegevens, kunnen er beveiligingsproblemen 
+Wanneer medewerkers persoonlijke apparaten of niet-goedgekeurde software gebruiken om toegang te krijgen tot systemen of gegevens, kunnen er beveiligingsproblemen 
 ontstaan. In het geval dat de nurse-PC wordt gekoppeld aan onveilige hardware of software, worden gevoelige gegevens kwetsbaar voor 
 datadiefstal of aanvallen zoals eerder besproken in het interview met \textcite{Hecker2021}.
 Bovendien, kunnen werknemers die betrokken zijn bij Shadow IT, malware binnenhalen via niet-geautoriseerde apparaten of software. 
